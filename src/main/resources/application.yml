@@ -1,0 +1,26 @@
+
+datadump:
+  location:
+    author: /Users/josephorji/Documents/microservices/cassandra-data-loader/test-authors.txt
+    works: /Users/josephorji/Documents/microservices/cassandra-data-loader/test-works.txt
+
+spring:
+  cassandra:
+    username: udqjoAgKwuQepwIsPXpdBgff
+    password: RHZKNd0pNG63jj2PwGql.gg+eWo_+Q.G6Ozg9P8,rp5_gDZE3+aZ1_UdTKJkt7QFRpqYq7-_N+doW7H-KeWEvJqW7m+t7ZgN72-O0B461ZH1YkL2R7tksmFtLfJ5_K3M
+    schema-action: create-if-not-exists
+    request:
+      timeout: 10s
+    connection:
+      connect-timeout: 10s
+      init-query-timeout: 10s
+    keyspace-name: main
+
+datastax.astra:
+  secure-connect-bundle: secure-connect.zip
+
+astra.db:
+  id: cc70b467-30a4-40c7-83b9-90ecd2f094e8
+  region: us-east1
+  keyspace: main
+  application.token: AstraCS:udqjoAgKwuQepwIsPXpdBgff:9497d029243bd3a35a53394c554c28cb1884ad28e5494726670d86e1aa1df422
